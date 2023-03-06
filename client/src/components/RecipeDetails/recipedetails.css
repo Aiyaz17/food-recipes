@@ -17,12 +17,14 @@
 .img-container img {
   width: 100%;
   border-radius: 10px;
+  max-height: 500px !important;
+  object-fit: cover !important;
 }
+
 .img-container .swiper-slide {
   cursor: grab;
 }
-.img-container .img-carousel {
-}
+
 .right .info {
   display: flex;
   flex-direction: column;
