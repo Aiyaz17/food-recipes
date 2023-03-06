@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.register-img {
+  max-height: 500px;
+}
+.signin-img {
+  max-height: 470px;
+}
+
+.auth form {
+  width: 400px;
+}
