@@ -29,7 +29,7 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import config from "../../config";
 
-const AddRecipe = ({ type, ...props }) => {
+const AddRecipe = ({ type, recipes, setRecipes, ...props }) => {
   const [recipe, setRecipe] = useState({
     name: "",
     description: "",
@@ -159,6 +159,17 @@ const AddRecipe = ({ type, ...props }) => {
       setIngredients([{ name: "", qty: "" }]);
       setSteps([""]);
       setImages([]);
+      const newRecipe = response.data.data.newRecipe;
+
+      setRecipes([
+        ...recipes,
+        {
+          _id: newRecipe._id,
+          img: newRecipe.images[0],
+          name: newRecipe.name,
+          duration: newRecipe.preparationTime + newRecipe.cookingTime,
+        },
+      ]);
 
       const target = document.querySelector("#create");
       target.scrollIntoView({ behavior: "smooth" });

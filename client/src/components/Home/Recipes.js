@@ -20,10 +20,9 @@ import { Edit, Delete } from "@mui/icons-material/";
 import config from "../../config";
 import { Link } from "react-router-dom";
 
-const Recipes = ({ type, ...props }) => {
+const Recipes = ({ type, recipes, setRecipes, ...props }) => {
   const [searchValue, setSearchValue] = useState("");
   const [page, setPage] = useState(1);
-  const [recipes, setRecipes] = useState([]);
   const [totalPages, setTotalPages] = useState(null);
   const [cancelToken, setCancelToken] = useState(null);
   const [dialogOpen, setDialogOpen] = useState(false);

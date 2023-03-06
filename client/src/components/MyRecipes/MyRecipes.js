@@ -13,6 +13,7 @@ const MyRecipes = () => {
   const baseUrl = config();
   const navigate = useNavigate();
   const editRecipeSectionRef = useRef(null);
+  const [recipes, setRecipes] = useState([]);
 
   const handleDeleteRecipe = async (e, _id) => {
     e.stopPropagation();
@@ -71,6 +72,8 @@ const MyRecipes = () => {
         type={2}
         deleteRecipe={handleDeleteRecipe}
         triggerEdit={triggerEdit}
+        recipes={recipes}
+        setRecipes={setRecipes}
       />
       <div ref={editRecipeSectionRef}>
         {showEditForm && (
