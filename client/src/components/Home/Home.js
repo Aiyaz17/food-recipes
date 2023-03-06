@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import Hero from "./Hero";
 import Recipes from "./Recipes";
-import RequireAuth from "../Auth/ProtectedRoute";
+import ProtectedRoute from "../Auth/ProtectedRoute";
 import AddRecipe from "./AddRecipe";
 const Home = () => {
   return (
@@ -14,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default RequireAuth(Home);
+export default ProtectedRoute(Home);

@@ -92,7 +92,7 @@ const Register = ({ setUser }) => {
               onChange={handleChange}
               value={data.email}
             />
-            <Box sx={{ display: "flex", gap: "20px" }}>
+            <Box className="password-container">
               <TextField
                 variant="outlined"
                 label="Password"
