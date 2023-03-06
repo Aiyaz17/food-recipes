@@ -13,7 +13,7 @@ module.exports = catchAsync(async (req, res, next) => {
   }
   console.log({ token });
 
-  if (!token) {
+  if (!token || token == "null") {
     return next(new AppError("You are not logged in to gain access"));
   }
 
