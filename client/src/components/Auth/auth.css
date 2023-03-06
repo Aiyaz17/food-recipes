@@ -9,7 +9,44 @@ form {
 .signin-img {
   max-height: 470px;
 }
-
+.card-container {
+  min-width: 500px;
+  display: flex;
+  gap: 30px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .auth form {
   width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+  .auth {
+    margin-top: 100px;
+  }
+  .auth form {
+    width: 100%;
+    max-width: 100%;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    min-width: unset;
+  }
+  .card-container .signin-img {
+    max-width: 100%;
+    max-height: unset;
+    margin-top: 20px;
+  }
+  .card-container .register-img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  ..card-container input {
+    width: 100%;
+  }
 }

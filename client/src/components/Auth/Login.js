@@ -45,24 +45,22 @@ const Login = ({ setUser }) => {
 
   return (
     <Box
-    className="auth"
+      className="auth"
       sx={{
         display: "flex",
         minHeight: "100vh",
         justifyContent: "center",
         alignItems: "center",
-        mt: 12,
+        mt: 9,
       }}
     >
       <Card
+        className="card-container"
         sx={{
           p: 5,
-          minWidth: "500px",
-          display: "flex",
-          gap: "30px",
         }}
       >
-        <Box>
+        <Box className="form-container">
           <Typography
             className="primary-highlight"
             variant="h3"
