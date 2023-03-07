@@ -219,11 +219,16 @@
 @media screen and (max-width: 400px) {
   .recipe-card {
     width: 100% !important;
-    margin: auto;
     height: 420px;
+  }
+  .recipe-card-link {
+    width: 90%;
   }
   .recipe-card .content .name {
     font-size: 24px;
     -webkit-line-clamp: 3;
+  }
+  .hero-container {
+    padding-top: 60px;
   }
 }
