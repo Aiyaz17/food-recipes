@@ -40,8 +40,7 @@ npm run start
 
 4. Open the web application in your browser:
 
-```
-bashCopy code
+```bashCopy code
 http://localhost:3000/
 
 ```
