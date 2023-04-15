@@ -12,21 +12,30 @@ git clone https://github.com/Aiyaz17/food-recipes.git
 
 ```
 
-2. Install the necessary dependencies using npm:
+2. Install the necessary dependencies using npm in both folders server and client:
 
-```
-bashCopy code
-cd <repository-name>
+```bash
+
+cd food-recipes/client
 npm install
 
+cd ../server
+npm install
 ```
 
-3. Start the server:
+3. Set Env variables in server and client ".env" files:
 
-```
-bashCopy code
+4. Start the server :
+
+```bash
 npm start
+```
 
+5. Run the client:
+
+```bash
+
+npm run start
 ```
 
 4. Open the web application in your browser:
