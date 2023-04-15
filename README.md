@@ -49,17 +49,14 @@ http://localhost:3000/
 
 1. Start by visiting the homepage of the application.
 2. On the homepage, you can see a list of available recipes.
-3. Click on a specific recipe to view its details, such as ingredients, time duration required to make it, and steps to make it.
-4. To create your own recipe, click on the "Create Recipe" button and fill in the necessary details, such as recipe name, ingredients, time required, and steps to make it.
-5. To edit or delete your own recipe, go to the recipe's detail page and click on the "Edit" or "Delete" button.
-6. To search for a specific recipe, use the search bar at the top of the page.
-7. To filter recipes by specific categories, use the filter dropdown at the top of the page.
-
-## **Additional Information**
+3. Click on a specific recipe to view its details, such as ingredients, time duration required to make it, steps to make it, etc.
+4. To create your own recipe, click on the "Create Recipe" button in Navbar and fill in the necessary details, such as recipe name, ingredients, time required, and steps to make it,Images, etc.
+5. To edit or delete your own recipe, go to the "My Recipes" page using the option in the Navbar, There you can Edit and Delete the descipe from the list.
+6. To search for a specific recipe, use the search bar at the top of the Home page.
+  
+## **Important Information**
 
 - The website allows users to add recipes with images.
-- Users can sort recipes by name, time required, and category.
 - Users can only edit or delete their own recipes.
-- Users can add multiple categories to their recipes.
 - Users can view other users' recipes, but cannot edit or delete them.
 - The website uses MongoDB to store recipe information, including the recipe name, ingredients, time required, steps to make it, and image.
